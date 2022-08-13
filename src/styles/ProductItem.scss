@@ -1,0 +1,22 @@
+@import 'vars';
+
+.product-item {
+    position: relative;
+    width: 300px;
+    height: 340px;
+    // background-image: url('https://speoimages.blob.core.windows.net/testcontainer/0dbd2480-2894-47d1-9d82-d39eedc29f58.jpg');
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.product-item_info{
+    z-index: 10;
+    color: white;
+    position: absolute;
+    bottom: -10px;
+    padding: 15px 10px;
+    text-shadow: 0px 0px 4px rgb(0 0 0 / 80%);
+    width: inherit;
+    box-sizing: border-box;
+    backdrop-filter: blur(0.05rem);
+}
