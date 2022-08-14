@@ -4,7 +4,7 @@ import logo from '@logos/logo.png';
 import menu from '@icons/dotMenu.png';
 import Navbar from './Navbar';
 const Header = () => {
-	const [openMenuClass, setOpenMenu] = useState('');
+	const [openMenuClass, setOpenMenu] = useState('header-nav-open');
 	const [dotMenuClass, setDotMenuClass] = useState('');
 
 	const OpenMenu = ()=> {
@@ -18,7 +18,7 @@ const Header = () => {
 
 	return (
 		<>
-			<div className="col-10 flex-wrap header">
+			<div className="flex-wrap header">
 				<div className="header-logo">
 					<img className='' src={logo} />
 				</div>

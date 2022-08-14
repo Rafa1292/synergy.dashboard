@@ -2,11 +2,11 @@
 
 .product-item {
     position: relative;
-    width: 300px;
+    width: 440px;
     height: 340px;
-    // background-image: url('https://speoimages.blob.core.windows.net/testcontainer/0dbd2480-2894-47d1-9d82-d39eedc29f58.jpg');
     background-size: cover;
     border-radius: 3px;
+    margin: 1rem;
 }
 
 .product-item_info{
@@ -18,5 +18,37 @@
     text-shadow: 0px 0px 4px rgb(0 0 0 / 80%);
     width: inherit;
     box-sizing: border-box;
-    backdrop-filter: blur(0.05rem);
+    backdrop-filter: brightness(0.8);
+}
+
+@media(max-width: 1100px){
+    .product-item {
+        width: 300px;
+    }
+}
+
+@media(max-width: 800px){
+    .product-item {
+        width: 320px;
+    }
+}
+
+@media(max-width: 480px){
+    .product-item {
+        width: 360px;
+    }
+}
+
+
+@media(max-width: 390px){
+    .product-item {
+        width: 320px;
+    }
+}
+
+
+@media(max-width: 350px){
+    .product-item {
+        width: 280px;
+    }
 }

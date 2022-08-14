@@ -54,7 +54,7 @@ const Carousel = ({ id, fotos = [] }) => {
 
     return (
         <div className="slider">
-            <div style={{ zIndex: '1', position: 'absolute', height: 'inherit', width: 'inherit', background: 'rgba(0,0,0,.14)' }}></div>
+            <div style={{ backdropFilter: 'contrast(1.15)', zIndex: '1', position: 'absolute', height: 'inherit', width: 'inherit', background: 'rgba(0,0,0,.14)' }}></div>
 
             {
                 fotos.map((x, index) => (

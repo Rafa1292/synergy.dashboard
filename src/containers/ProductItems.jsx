@@ -60,7 +60,11 @@ const ProductItems = () => {
 
     return (
         <>
-            <div className="col-10 center flex-wrap">
+            <div className="col-10 center flex-wrap" style={
+                {
+                    overflow: 'hidden'
+                }
+            }>
                 {items.map( x => (
                     <ProductItem key={x.id} product={x} />
                 ))}

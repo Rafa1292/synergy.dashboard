@@ -3,10 +3,12 @@
 .header {
 	background: var(--black);
 	position: fixed;
-	height: 12vh;
+	height: 90px;
 	top: 0;
 	box-sizing: border-box;
 	z-index: 10000;
+	width: 100vw;
+	align-items: center;
 }
 
 .header-logo {
@@ -16,7 +18,7 @@
 
 	img {
 		position: absolute;
-		top: 2vh;
+		top: -45px;
 		height: 150px;
 	}
 }

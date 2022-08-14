@@ -1,5 +1,8 @@
 import React from 'react';
 import '@styles/Navbar.scss';
+import face from '@icons/face.png'
+import tiktok from '@icons/tiktok.png'
+import insta from '@icons/instagram.png'
 
 const Navbar = () => {
     return (
@@ -12,9 +15,20 @@ const Navbar = () => {
                     <span className='p-2 link'>ALQUILER</span>
                     <span className='link '>
                         <span className='bold contact-btn'>
-                        HABLEMOS...
+                            HABLEMOS...
                         </span>
                     </span>
+                </div>
+
+                <div className="col-10 display-on-mobile relative py-2" style={{ position: 'absolute', bottom: '0' }}>
+                    <div className="col-10 p-2 d-flex items-center flex-wrap">
+                        <div className="col-5 d-flex center">
+                            Siguenos
+                        </div>
+                        <img height={40} className='mx-1' src={face} />
+                        <img height={40} className='mx-1' src={tiktok} />
+                        <img height={40} className='mx-1' src={insta} />
+                    </div>
                 </div>
             </div>
         </>

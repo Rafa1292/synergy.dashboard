@@ -3,8 +3,12 @@
 .nav {
     color: rgba(255, 255, 255, .5);
     height: 70px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
+
+    img{
+        opacity: 0.7;
+    }
 }
 
 .nav-content {
@@ -25,5 +29,11 @@
 @media (max-width: 780px) {
     .nav-content {
         display: block;
+    }
+}
+
+@media (max-width: 1500px) {
+    .nav {
+        font-size: 15px;
     }
 }

@@ -6,6 +6,10 @@ body {
 		letter-spacing: 1px;
 }
 
+.relative{
+	position: relative;
+}
+
 .link{
 	color: rgba(255,255,255,.5);
 	padding: 5px;
@@ -415,9 +419,17 @@ input[type="checkbox"i] {
 	justify-content: space-around;
 }
 
+.display-on-mobile{
+	display: none;
+}
+
 @media (max-width: 800px) {
 	.dropdown-content{
 		right: -100px;
+	}
+
+	.display-on-mobile{
+		display: flex;
 	}
 }
 @media (max-width: 770px) {
