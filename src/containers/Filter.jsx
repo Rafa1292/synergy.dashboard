@@ -22,7 +22,7 @@ const OpenFilter = () => {
 }
 return (
     <>
-        <div className="col-md-8 filter p-1 flex-wrap">
+        <div className="col-md-6 filter p-1 flex-wrap">
             <h2 className='col-10 justify-start bold'>
                 <strong>
                     Preferencias
