@@ -14,9 +14,9 @@ const Navbar = () => {
                     <span className='p-2 link'>COMERCIAL</span>
                     <span className='p-2 link'>ALQUILER</span>
                     <span className='link '>
-                        <span className='bold contact-btn'>
+                        <a href='https://wa.me/50660468877?text=Me+gustaria+una+asesoria' target='blank' style={{textDecoration: 'none'}} className='bold contact-btn'>
                             HABLEMOS...
-                        </span>
+                        </a>
                     </span>
                 </div>
 

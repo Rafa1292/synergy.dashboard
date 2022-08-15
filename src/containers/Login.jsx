@@ -66,12 +66,17 @@ const Login = () => {
             <Link className='col-10 center' to={'/password-recovery'}>
                 <small className='col-10 center p-1'>¿Olvidó su contraseña?</small>
             </Link>
+            <small className='text-center my-2'>Al iniciar sesion, estas de acuerdo con nuestros
+                <strong>&nbsp;Terminos de servicio</strong> y <strong>Politica de privacidad&nbsp;</strong>
+                incuyendo el <strong>Uso de Cookies</strong>. Otros podran contactarte por email
+                o numero telefonico que brindaste.
+            </small>
 
 
             <div className='col-10 p-0 center' style={{ marginTop: '2rem', borderTop: '1px solid rgba(0,0,0,.2)' }}>
                 <span className='col-10 center py-2 ' >¿No estas registrado?</span>
                 <div className="col-md-6 center">
-                    <Link className='col-10 center' style={{zIndex: '100'}} to={'/register'}>
+                    <Link className='col-10 center' style={{ zIndex: '100' }} to={'/register'}>
                         <button type='button' className='col-8 btn '>
                             Registrarse
                         </button>

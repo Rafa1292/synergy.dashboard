@@ -14,7 +14,9 @@ const Footer = () => {
                     <div className="col-10 flex-wrap start">
                         <span className='footer-title py-1 col-md-10'>Siguenos</span>
                         <div className="footer-follow col-10 flex-wrap py-2">
-                            <img className='mx-2' src={face} />
+                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
+                                <img className='mx-2' src={face} />
+                            </a>
                             <img className='mx-2' src={tiktok} />
                             <img className='mx-2' src={insta} />
                         </div>
@@ -22,34 +24,38 @@ const Footer = () => {
                     <div className="col-10 start flex-wrap">
                         <span className='footer-title py-1 col-md-10'>Contacto</span>
                         <div className="footer-contact col-10 flex-wrap py-2">
-                            <img className='mx-2' src={wapp} />
-                            <img className='mx-2' src={gmail} />
+                            <a href='https://wa.me/50660468877?text=Me+gustaria+una+asesoria' style={{ textDecoration: 'none' }} target='blank'>
+                                <img className='mx-2' src={wapp} />
+                            </a>
+                            <a target={'blank'} href="mailto:quesada.realty@gmail.com?Subject=Interesado%20en%20asesoria">
+                                <img className='mx-2' src={gmail} />
+                            </a>
                         </div>
                     </div>
                     <div className="col-10 start flex-wrap">
                         <span className='footer-title py-1 col-md-10'>Privacidad</span>
                         <div className="footer-privacity col-10 flex-wrap py-2">
-                            <span className='col-10 flex-wrap start my-2 link'>
+                            <a href='/terms-and-conditions' className='col-10 flex-wrap start my-2 link'>
                                 Terminos y condiciones
-                            </span>
-                            <span className='col-10 flex-wrap start my-2 link'>
+                            </a>
+                            <a  href='/privacy-policy' className='col-10 flex-wrap start my-2 link'>
                                 Politica de privacidad
-                            </span>
-                            <span className='col-10 flex-wrap start my-2 link'>
+                            </a>
+                            <a className='col-10 flex-wrap start my-2 link'>
                                 Agentes
-                            </span>
-                            <span className='col-10 flex-wrap start my-2 link'>
+                            </a>
+                            <a className='col-10 flex-wrap start my-2 link'>
                                 Nuestra historia
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5 center flex-wrap">
-                    <h2 className='col-10 center'>¿Tienes una propiedad y la quieres vender?</h2>
+                <div className="col-md-5 p-2 center flex-wrap">
+                    <h2 className='col-10 text-center center'>¿Tienes una propiedad y la quieres vender?</h2>
                     <span className='link'>
-                        <span className='bold col-8 contact-btn'>
-                        HABLEMOS...
-                        </span>
+                        <a href='https://wa.me/50660468877?text=Me+gustaria+una+asesoria' target='blank' style={{ textDecoration: 'none' }} className='bold col-8 contact-btn'>
+                            HABLEMOS...
+                        </a>
                     </span>
 
                 </div>

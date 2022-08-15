@@ -4,7 +4,7 @@ import logo from '@logos/logo.png';
 import menu from '@icons/dotMenu.png';
 import Navbar from './Navbar';
 const Header = () => {
-	const [openMenuClass, setOpenMenu] = useState('header-nav-open');
+	const [openMenuClass, setOpenMenu] = useState('');
 	const [dotMenuClass, setDotMenuClass] = useState('');
 
 	const OpenMenu = ()=> {

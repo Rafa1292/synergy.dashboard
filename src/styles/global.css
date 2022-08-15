@@ -232,14 +232,15 @@ li{
 
 
 select{
-	height: 45px;
+	height: 60px;
 	width: -webkit-fill-available;
 	padding: 10px;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
     color: rgba(0,0,0,.5);
 	text-align: center;
-	font-size: 15px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 label{
@@ -400,14 +401,15 @@ input[type="checkbox"i] {
 	font-weight: bold;
 }
 .input {
-	height: 45px;
+	height: 60px;
 	width: -webkit-fill-available;
 	box-sizing: border-box;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
     color: rgba(0,0,0,.5);
 	text-align: center;
-	font-size: 14px;
+	font-size: 18px;
+	font-weight: bold;
 	display: flex;
 }
 
@@ -430,6 +432,16 @@ input[type="checkbox"i] {
 
 	.display-on-mobile{
 		display: flex;
+	}
+
+	.input{
+		height: 45px;
+		font-size: 15px;
+	}
+
+	select{
+		height: 45px;
+		font-size: 15px;
 	}
 }
 @media (max-width: 770px) {

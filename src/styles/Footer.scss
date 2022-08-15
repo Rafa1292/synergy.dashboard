@@ -1,6 +1,6 @@
 @import 'vars';
 
-.footer{
+.footer {
     padding: 40px;
     font-size: 15px;
     color: white;
@@ -10,17 +10,19 @@
     margin-top: 50px;
     background-color: var(--black);
 
-    img{
+    a {
+        text-decoration: none;
+    }
+
+    img {
         height: 50px;
         filter: drop-shadow(2px 4px 6px black);
-        }
+    }
 }
 
-.footer-title{
-    border-bottom: 3px solid rgba(255,255,255,.1);
+.footer-title {
+    border-bottom: 3px solid rgba(255, 255, 255, .1);
     font-weight: bold;
 }
 
-.footer-follow{
-
-}
+.footer-follow {}
