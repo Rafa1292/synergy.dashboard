@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <>
             <div className="col-10 flex-wrap items-center center footer" >
-                <div className="col-md-4 flex-wrap ">
+                <div className="col-md-4 flex-wrap my-2">
                     <div className="col-10 p-2 center flex-wrap">
                         <h2 className='col-10 text-center center'>¿Tienes una propiedad y la quieres vender?</h2>
                         <span className='link'>
@@ -36,7 +36,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4 start flex-wrap">
+                <div className="col-md-4 start my-2 flex-wrap">
                     <span className='footer-title  col-md-10'>Privacidad</span>
                     <div className="footer-privacity col-10 flex-wrap py-1">
                         <a href='/terms-and-conditions' className='col-10 flex-wrap start link'>

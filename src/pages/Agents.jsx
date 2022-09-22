@@ -1,5 +1,5 @@
 import React from 'react';
-import grecia from '@logos/grecia.jpg';
+import grecia from '@logos/teq.jpg';
 import '@styles/Agents.scss';
 
 const Agents = () => {
@@ -9,7 +9,9 @@ const Agents = () => {
             <div className='agents-backdrop'></div>
             <h3 className='agents-title'>Nuestros Expertos</h3>
             <div className="col-10 py-2 flex-wrap center">
-
+            <div className="agent-card">
+                
+            </div>
             </div>
         </div>
     );

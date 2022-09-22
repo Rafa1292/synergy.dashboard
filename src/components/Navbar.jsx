@@ -21,13 +21,10 @@ const Navbar = () => {
                 </div>
 
                 <div className="col-10 display-on-mobile relative py-2" style={{ position: 'absolute', bottom: '0' }}>
-                    <div className="col-10 p-2 d-flex items-center flex-wrap">
-                        <div className="col-5 d-flex center">
-                            Siguenos
-                        </div>
-                        <img height={40} className='mx-1' src={face} />
-                        <img height={40} className='mx-1' src={tiktok} />
-                        <img height={40} className='mx-1' src={insta} />
+                    <div className="col-10 p-2 d-flex justify-end items-center flex-wrap">
+                        <img height={25} className='mx-1' src={face} />
+                        <img height={25} className='mx-1' src={tiktok} />
+                        <img height={25} className='mx-1' src={insta} />
                     </div>
                 </div>
             </div>
