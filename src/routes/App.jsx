@@ -9,6 +9,7 @@ import NewPassword from '@pages/NewPassword';
 import SendEmail from '@pages/SendEmail';
 import PrivacyPolicy from '@pages/PrivacyPolicy';
 import TermsAndConditions from '@pages/TermsAndConditions';
+import Agents from '@pages/Agents';
 import DeleteMyData from '@pages/DeleteMyData';
 import NotFound from '@pages/NotFound';
 import AppContext from '../context/AppContext';
@@ -24,6 +25,7 @@ const App = () => {
 					<Switch>
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/privacy-policy" component={PrivacyPolicy} />
+						<Route exact path="/agents" component={Agents} />
 						<Route exact path="/terms-and-conditions" component={TermsAndConditions} />
 						<Route exact path="/delete-my-data" component={DeleteMyData} />
 						<Route exact path="/register" component={Register} />

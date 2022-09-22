@@ -50,7 +50,7 @@ return (
             </div>
             <div className=" d-flex justify-end py-1 filter-settings">
                 <div onClick={() => OpenFilter()} style={openFilterClass === '' ? {} : filterBtn} className="filter-settings_btn center items-center">
-                    <img height={35} src={settingsImg} />
+                    <img height={25} src={settingsImg} />
                 </div>
             </div>
             <div className={`filter-expanse flex-wrap col-10 ${openFilterClass}`}>

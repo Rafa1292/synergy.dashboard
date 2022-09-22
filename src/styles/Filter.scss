@@ -7,12 +7,12 @@
 .filter-settings_btn{
     border: 1px solid rgba(0,0,0,.2); 
     border-radius: 5px; 
-    height: 60px; 
-    width: 60px;
+    height: 40px; 
+    width: 80px;
 }
 
 .filter-settings{
-    width: 5%;
+    width: 8%;
 }
 
 .filter-expanse{
@@ -28,12 +28,12 @@
 }
 
 .filter-category{
-    width: 30%;
+    width: 28%;
     box-sizing: border-box;
 }
 
 .filter-places{
-    width: 65%;
+    width: 64%;
     box-sizing: border-box;
 
 }
@@ -48,7 +48,7 @@
     }
 
     .filter-settings_btn{
-    height: 45px;
+    height: 35px;
     }
     
     .filter-places{

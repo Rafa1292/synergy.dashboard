@@ -1,9 +1,9 @@
 body {
 	background: rgba(0,0,0,.04);
 	margin: 0;
-	padding-top: 150px;
-	font-family: 'Libre Franklin', sans-serif;
-		letter-spacing: 1px;
+	padding-top: 161px;
+	font-family: 'Nunito Sans', sans-serif;
+			letter-spacing: 1px;
 }
 
 .relative{
@@ -11,15 +11,17 @@ body {
 }
 
 .link{
-	color: rgba(255,255,255,.5);
 	padding: 5px;
 	cursor: pointer;
 	display: flex;
 }
 
 .link:hover{
-	color: #fbc514;
-	border-bottom: 1px solid #fbc514;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #fbc514;
+    border-bottom: 1px solid #fbc514;
+    background: rgba(0,0,0,.3);
 
 }
 
@@ -232,14 +234,14 @@ li{
 
 
 select{
-	height: 60px;
+	height: 40px;
 	width: -webkit-fill-available;
 	padding: 10px;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
     color: rgba(0,0,0,.5);
 	text-align: center;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: bold;
 }
 
@@ -401,14 +403,14 @@ input[type="checkbox"i] {
 	font-weight: bold;
 }
 .input {
-	height: 60px;
+	height: 40px;
 	width: -webkit-fill-available;
 	box-sizing: border-box;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
     color: rgba(0,0,0,.5);
 	text-align: center;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: bold;
 	display: flex;
 }
@@ -435,13 +437,13 @@ input[type="checkbox"i] {
 	}
 
 	.input{
-		height: 45px;
-		font-size: 15px;
+		height: 35px;
+		font-size: 12px;
 	}
 
 	select{
-		height: 45px;
-		font-size: 15px;
+		height: 35px;
+		font-size: 12px;
 	}
 }
 @media (max-width: 770px) {

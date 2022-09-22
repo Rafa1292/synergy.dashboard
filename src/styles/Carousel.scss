@@ -22,8 +22,9 @@
   height: 350px;
   position: absolute;
   transition: all 0.5s;
-  background-size: cover;
+  background-size: 110%;
   border: 2px solid var(--gray);
+  transition: all ease 1s;
 }
 
 .slide img {
@@ -80,6 +81,10 @@
   
   .btn-next {
     right: 2%;
+  }
+
+  .slide{
+    background-size: 120%;
   }
 }
 

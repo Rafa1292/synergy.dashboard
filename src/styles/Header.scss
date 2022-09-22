@@ -1,14 +1,16 @@
 @import 'vars';
 
 .header {
-	background: var(--black);
+	background: rgba(255,255,255,.2);
+	backdrop-filter: blur(6px);
 	position: fixed;
-	height: 90px;
+	height: 161px;
 	top: 0;
 	box-sizing: border-box;
 	z-index: 10000;
 	width: 100vw;
 	align-items: center;
+	border-bottom: 1px solid rgba(255,255,255,.3);
 }
 
 .header-logo {
@@ -18,8 +20,8 @@
 
 	img {
 		position: absolute;
-		top: -45px;
-		height: 150px;
+		top: -77px;
+		height: 162px;
 	}
 }
 
@@ -35,9 +37,13 @@
 .header-menu {
 	display: none;
 	img {
+		position: absolute;
+		right: 0;
 		height: 50px;
 	}
 }
+
+
 
 .header-nav-open {
 	right: 0vw !important;

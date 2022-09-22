@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '@styles/Header.scss';
 import logo from '@logos/logo.png';
-import menu from '@icons/dotMenu.png';
+import menu from '@icons/menu.png';
+import menuamarillo from '@icons/menuamarillo.png';
 import Navbar from './Navbar';
 const Header = () => {
 	const [openMenuClass, setOpenMenu] = useState('');
@@ -26,7 +27,7 @@ const Header = () => {
 					<Navbar />
 				</div>
 				<div className="header-menu">
-					<img className={`${dotMenuClass}`} src={menu} onClick={()=>OpenMenu()}/>
+					<img className={`${dotMenuClass}`} src={openMenuClass === '' ? menu : menuamarillo} onClick={()=>OpenMenu()}/>
 				</div>
 			</div>
 		</>
