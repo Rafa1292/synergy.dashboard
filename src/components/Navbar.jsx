@@ -1,33 +1,39 @@
 import React from 'react';
 import '@styles/Navbar.scss';
-import face from '@icons/face.png'
-import tiktok from '@icons/tiktok.png'
-import insta from '@icons/instagram.png'
+import face from '@icons/facew.png'
+import insta from '@icons/instagramw.png'
+import wapp from '@icons/wappw.png'
 
-const Navbar = () => {
+const Navbar = ({ menuState }) => {
+
+
     return (
         <>
-            <div className="col-10  nav d-flex items-end">
-                <div className="col-md-10 nav-content">
-                    <span className='p-2 link'>CASAS</span>
-                    <span className='p-2 link'>LOTES</span>
-                    <span className='p-2 link'>COMERCIAL</span>
-                    <span className='p-2 link'>ALQUILER</span>
-                    <span className='link '>
-                        <a href='https://wa.me/50660468877?text=Me+gustaria+una+asesoria' target='blank' style={{textDecoration: 'none'}} className='bold contact-btn'>
-                            HABLEMOS...
-                        </a>
-                    </span>
-                </div>
-
-                <div className="col-10 display-on-mobile relative py-2" style={{ position: 'absolute', bottom: '0' }}>
-                    <div className="col-10 p-2 d-flex justify-end items-center flex-wrap">
-                        <img height={25} className='mx-1' src={face} />
-                        <img height={25} className='mx-1' src={tiktok} />
-                        <img height={25} className='mx-1' src={insta} />
-                    </div>
-                </div>
-            </div>
+            <main className={`navbar ${menuState}`}>
+                <ul className="list-group navbar-options list-group-flush col-12">
+                    <li className="list-group-item">Casas</li>
+                    <li className="list-group-item">Lotes</li>
+                    <li className="list-group-item">Comercial</li>
+                    <li className="list-group-item">Alquiler</li>
+                </ul>
+                <ul className="list-group list-group-horizontal col-12 list-group-flush justify-content-center" style={{opacity: '0.8'}}>
+                        <li className="list-group-item">
+                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
+                                <img  height={40} src={face} />
+                            </a>
+                        </li>
+                        <li className="list-group-item">
+                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
+                                <img  height={40} src={insta} />
+                            </a>
+                        </li>
+                        <li className="list-group-item">
+                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
+                                <img  height={40} src={wapp} />
+                            </a>
+                        </li>
+                    </ul>
+            </main>
         </>
     );
 }

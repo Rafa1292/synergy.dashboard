@@ -1,67 +1,45 @@
 import React from 'react'
 import face from '@icons/face.png'
-import tiktok from '@icons/tiktok.png'
 import insta from '@icons/instagram.png'
 import wapp from '@icons/wapp.png'
-import gmail from '@icons/gmail.png'
+import logo from '@logos/logoNegro.png';
 import '@styles/Footer.scss';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <>
-            <div className="col-10 flex-wrap items-center center footer" >
-                <div className="col-md-4 flex-wrap my-2">
-                    <div className="col-10 p-2 center flex-wrap">
-                        <h2 className='col-10 text-center center'>¿Tienes una propiedad y la quieres vender?</h2>
-                        <span className='link'>
-                            <a href='https://wa.me/50660468877?text=Me+gustaria+una+asesoria' target='blank' style={{ textDecoration: 'none' }} className='bold col-8 contact-btn'>
-                                HABLEMOS...
-                            </a>
-                        </span>
-
+            <div className="col-12 m-0 bg-light shadow">
+                <footer className="d-flex flex-wrap justify-content-around align-items-center p-4 border-top" style={{height: '150px'}}>
+                    <div className="col-md-4 d-flex align-items-center">
+                        <span className="mb-3 mb-md-0 text-muted">© 2011 Synergy Real Estate</span>
                     </div>
-                    <div className="col-10 flex-wrap start">
-                        <div className="footer-follow col-10 flex-wrap py-2">
+                    <Link
+                            to="/"
+                            className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+                        >
+                            <img className='' height={90} src={logo} />
+                        </Link>
+                    <ul className="nav col-md-4 justify-content-end list-unstyled d-flex" style={{opacity: '0.5'}}>
+                        <li className="ms-3">
                             <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
-                                <img className='mx-2' src={face} />
+                                <img  height={40} src={face} />
                             </a>
-                            <img className='mx-2' src={tiktok} />
-                            <img className='mx-2' src={insta} />
-                            <a href='https://wa.me/50660468877?text=Me+gustaria+una+asesoria' style={{ textDecoration: 'none' }} target='blank'>
-                                <img className='mx-2' src={wapp} />
+                        </li>
+                        <li className="ms-3">
+                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
+                                <img  height={40} src={insta} />
                             </a>
-                            <a target={'blank'} href="mailto:quesada.realty@gmail.com?Subject=Interesado%20en%20asesoria">
-                                <img className='mx-2' src={gmail} />
+                        </li>
+                        <li className="ms-3">
+                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
+                                <img  height={40} src={wapp} />
                             </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-4 start my-2 flex-wrap">
-                    <span className='footer-title  col-md-10'>Privacidad</span>
-                    <div className="footer-privacity col-10 flex-wrap py-1">
-                        <a href='/terms-and-conditions' className='col-10 flex-wrap start link'>
-                            Terminos y condiciones
-                        </a>
-                        <a href='/privacy-policy' className='col-10 flex-wrap start link'>
-                            Politica de privacidad
-                        </a>
-                        <a href='/agents' className='col-10 flex-wrap start link'>
-                            Agentes
-                        </a>
-                        <a className='col-10 flex-wrap start link'>
-                            Nuestra historia
-                        </a>
-                    </div>
-                </div>
-
-
-                <small className='col-8 left py-1' style={{marginTop: '50px'}}>
-                    Alajuela, Grecia, Rincon de arias.
-                </small>
-                <small className='col-8 left'>
-                    © 2011 Quesada Bienes Raices
-                </small>
+                        </li>
+                    </ul>
+                </footer>
             </div>
+
         </>
     );
 }

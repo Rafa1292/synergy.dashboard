@@ -3,7 +3,6 @@
 .product-item {
     position: relative;
     width: 440px;
-    height: 340px;
     background-size: cover;
     border-radius: 3px;
     margin: 1rem;
@@ -12,8 +11,7 @@
 .product-item_info{
     z-index: 10;
     color: white;
-    position: absolute;
-    bottom: -10px;
+    bottom: 0;
     padding: 15px 10px;
     text-shadow: 0px 0px 4px rgb(0 0 0 / 80%);
     width: inherit;

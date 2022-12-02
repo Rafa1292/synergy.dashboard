@@ -27,9 +27,9 @@ const Home = () => {
 	}, [])
 	return (
 		<>
-			<div className='home p-2 col-10 flex-wrap'>
-				<div className='col-10 d-flex' style={{ height: 'fit-content' }}>
-
+			<div className='home col-12 flex-wrap'>
+				<div className='col-12 d-flex home-bg'>
+					<div className="home-backdrop"></div>
 				</div>
 			</div>
 			<Filter />

@@ -1,14 +1,19 @@
 @import 'vars';
 
-.filter {
-    justify-content: center;
-}
+
 
 .filter-settings_btn{
     border: 1px solid rgba(0,0,0,.2); 
     border-radius: 5px; 
-    height: 40px; 
+    height: inherit;
     width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        height: 40px;
+    }
 }
 
 .filter-settings{
@@ -16,9 +21,9 @@
 }
 
 .filter-expanse{
-    height: 0;
+    height: 0px;
     overflow: hidden;
-    transition: all ease 100ms;
+    transition: all ease-out 300ms;
     align-items: baseline;
     align-content: flex-start;
 }
@@ -27,16 +32,8 @@
     height: 500px;
 }
 
-.filter-category{
-    width: 28%;
-    box-sizing: border-box;
-}
 
-.filter-places{
-    width: 64%;
-    box-sizing: border-box;
 
-}
 
 @media (max-width: 800px) {
     .filter-category{
@@ -47,10 +44,6 @@
     width: 80px;
     }
 
-    .filter-settings_btn{
-    height: 35px;
-    }
-    
     .filter-places{
         width: 50%;
     }

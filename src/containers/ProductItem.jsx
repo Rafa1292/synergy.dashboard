@@ -9,6 +9,7 @@ const ProductItem = ({ product }) => {
     }
     return (
         <>
+        
             <div className="product-item flex-wrap">
                 <Carousel id={product?.id} fotos={product.fotos}/>
                 <div className="product-item_info">

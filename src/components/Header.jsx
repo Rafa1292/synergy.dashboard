@@ -2,34 +2,36 @@ import React, { useState } from 'react';
 import '@styles/Header.scss';
 import logo from '@logos/logo.png';
 import menu from '@icons/menu.png';
-import menuamarillo from '@icons/menuamarillo.png';
+import close from '@icons/close.png';
 import Navbar from './Navbar';
+import { Link } from "react-router-dom";
+
 const Header = () => {
 	const [openMenuClass, setOpenMenu] = useState('');
-	const [dotMenuClass, setDotMenuClass] = useState('');
 
-	const OpenMenu = ()=> {
+	const OpenMenu = () => {
+		console.log(openMenuClass)
 		if (openMenuClass === '') {
 			setOpenMenu('header-nav-open');
 		}
-		else{
+		else {
 			setOpenMenu('');
 		}
 	}
 
 	return (
 		<>
-			<div className="flex-wrap header">
+			<div className="d-flex bg-dark header">
 				<div className="header-logo">
-					<img className='' src={logo} />
-				</div>
-				<div className={`header-nav ${openMenuClass}`}>
-					<Navbar />
+					<Link to="/">
+						<img className='' src={logo} />
+					</Link>
 				</div>
 				<div className="header-menu">
-					<img className={`${dotMenuClass}`} src={openMenuClass === '' ? menu : menuamarillo} onClick={()=>OpenMenu()}/>
+					<img height={openMenuClass === "" ? 40 : 30} src={openMenuClass === "" ? menu : close} onClick={() => OpenMenu()} />
 				</div>
 			</div>
+			<Navbar menuState={openMenuClass}/>
 		</>
 	);
 }
