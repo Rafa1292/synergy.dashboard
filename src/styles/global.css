@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 1px;
-    width: calc(100vw - 90px);
+    width: calc(100vw - 110px);
     overflow-x: hidden;
     box-sizing: border-box;
 }

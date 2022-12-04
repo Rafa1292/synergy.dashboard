@@ -6,13 +6,13 @@
     border: 1px solid rgba(0,0,0,.2); 
     border-radius: 5px; 
     height: inherit;
-    width: 80px;
+    width: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
     img{
-        height: 40px;
+        height: 30px;
     }
 }
 
@@ -29,7 +29,7 @@
 }
 
 .filter-expanse_opened{
-    height: 500px;
+    height: 620px;
 }
 
 
@@ -53,7 +53,7 @@
     }
 
     .filter-expanse_opened{
-        height: 900px;
+        height: 610px;
     }
 }
 

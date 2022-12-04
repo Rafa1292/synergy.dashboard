@@ -19,11 +19,11 @@
 .slide {
   width: 100%;
   max-width: 800px;
-  height: 350px;
+  height: inherit;
   position: absolute;
   transition: all 0.5s;
-  background-size: 110%;
-  border: 2px solid var(--gray);
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: all ease 1s;
 }
 

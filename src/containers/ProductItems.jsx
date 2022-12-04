@@ -12,9 +12,9 @@ const ProductItems = () => {
                 precio: 55000000,
                 ubicacion: 'Alajuela, Grecia, Centro',
                 fotos: [
-                    'https://speoimages.blob.core.windows.net/paqtestimages/0a21e809-65d0-4370-abd3-aed45ea1875a.jpg',
-                    'https://speoimages.blob.core.windows.net/paqtestimages/12b60f66-302c-45a8-afe8-39a8c0e7b334.jpg',
-                    'https://speoimages.blob.core.windows.net/paqtestimages/4adcccda-7a92-4143-85e0-abd9af705892.jpg'
+                    'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_960_720.jpg',
+                    'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_960_720.jpg',
+                    'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_960_720.jpg'
                 ]
             },
             {
@@ -22,7 +22,7 @@ const ProductItems = () => {
                 precio: 46000000,
                 ubicacion: 'Alajuela, Grecia, Los Angeles',
                 fotos: [
-                    'https://speoimages.blob.core.windows.net/paqtestimages/bb730e12-8888-42ff-8ea8-4be0bf8a40aa.jpg',
+                    'https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_960_720.jpg',
                     'https://speoimages.blob.core.windows.net/paqtestimages/a01229bd-dec9-406a-9e5e-f006bd4970c4.jpg',
                     'https://speoimages.blob.core.windows.net/paqtestimages/4c9861cf-67ea-4629-bcbf-27a4755fc594.jpg'
                 ]
@@ -32,7 +32,7 @@ const ProductItems = () => {
                 precio: 38000000,
                 ubicacion: 'Alajuela, Grecia, San Roque',
                 fotos: [
-                    'https://speoimages.blob.core.windows.net/paqtestimages/08e6dc93-9dd1-4876-a89a-36f952b2a9a4.jpg',
+                    'https://c1.wallpaperflare.com/preview/260/583/682/new-home-for-sale-home-house.jpg',
                     'https://speoimages.blob.core.windows.net/paqtestimages/d8ef5239-8561-453e-8bc4-a17a1071ae4a.jpg',
                     'https://speoimages.blob.core.windows.net/paqtestimages/a6766f57-2ef4-49ad-b102-99b49acdeb88.jpg'
                 ]
@@ -95,19 +95,26 @@ const ProductItems = () => {
     useEffect(() => {
         GetItems()
     }, [])
-    
+
 
 
     return (
         <>
-            <div className="col-10 center flex-wrap" style={
+
+            <div className="container py-2">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+                        {items.map(x => (
+                            <ProductItem key={x.id} product={x} />
+                        ))}
+                </div>
+            </div>
+            <div className="col-12 d-flex center flex-wrap" style={
                 {
                     overflow: 'hidden'
                 }
             }>
-                {items.map( x => (
-                    <ProductItem key={x.id} product={x} />
-                ))}
+
             </div>
         </>
     );
