@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useGet } from '../hooks/useAPI';
 import swal from 'sweetalert';
 
@@ -7,8 +7,12 @@ const initialState = {
 		role: '',
 		sub: 0,
 		user: null,
-	}
+	},
+	products: []
 }
+
+
+
 
 
 const useInitialState = () => {
@@ -35,13 +39,28 @@ const useInitialState = () => {
 		}
 	}
 
+	const setProducts = async (products) => {
+		await setState({
+			...state,
+			products: products
+		})
+	}
+
+	const getProduct = async (id) => {
+		const product = state?.products?.find(x => x.id == id);
+		return product;
+	}
+
 	const resetAuthState = () => {
 		setState(initialState);
 	}
 
 	return {
 		setRole,
-		resetAuthState
+		resetAuthState,
+		setProducts,
+		getProduct,
+		state
 	}
 }
 

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import '@styles/Carousel.scss';
 import arrow from '@icons/arrow.png';
-const Carousel = ({ id, fotos = [] }) => {
+
+const Carousel = ({ id, fotos = [], footer = false }) => {
     const [carouselId, setCarouselId] = useState('');
 
     useEffect(() => {
@@ -12,7 +13,7 @@ const Carousel = ({ id, fotos = [] }) => {
 
         });
 
-        const nextSlide = document.querySelector(`.btn-next${id}`);
+        const nextSlide = document.querySelector(`.btn-nextC${id}`);
 
         // current slide counter
         let curSlide = 0;
@@ -34,7 +35,7 @@ const Carousel = ({ id, fotos = [] }) => {
             });
         });
 
-        const prevSlide = document.querySelector(`.btn-prev${id}`);
+        const prevSlide = document.querySelector(`.btn-prevC${id}`);
 
         // add event listener and navigation functionality
         prevSlide.addEventListener("click", function () {
@@ -53,23 +54,24 @@ const Carousel = ({ id, fotos = [] }) => {
     }, []);
 
     return (
-        <div className="slider">
-            <div className='slider-backdrop'></div>
+        <>
+            <div className="sliderC">
+                <div className='slider-backdropC'></div>
+                {
+                    fotos.map((x, index) => (
+                        <div key={index} className={`slideC id-${id}`} style={{ backgroundImage: `url(${x})` }}>
+                        </div>
+                    ))
+                }
 
-            {
-                fotos.map((x, index) => (
-                    <div key={index} className={`slide id-${id}`} style={{ backgroundImage: `url(${x})` }}>
-                    </div>
-                ))
-            }
-
-            <button className={`btn-carousel btn-next btn-next${id}`}>
-                <img height={20} src={arrow} />
-            </button>
-            <button className={`btn-carousel btn-prev btn-prev${id}`}>
-                <img height={20} style={{ rotate: '180deg' }} src={arrow} />
-            </button>
-        </div>
+                <button className={`btn-carouselC btn-nextC btn-nextC${id}`}>
+                    <img height={20} src={arrow} />
+                </button>
+                <button className={`btn-carouselC btn-prevC btn-prevC${id}`}>
+                    <img height={20} style={{ rotate: '180deg' }} src={arrow} />
+                </button>
+            </div>
+        </>
     );
 }
 

@@ -12,6 +12,7 @@ import TermsAndConditions from '@pages/TermsAndConditions';
 import Agents from '@pages/Agents';
 import DeleteMyData from '@pages/DeleteMyData';
 import NotFound from '@pages/NotFound';
+import Product from '@pages/Product';
 import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
 import '@styles/global.css';
@@ -31,6 +32,7 @@ const App = () => {
 						<Route exact path="/register" component={Register} />
 						<Route exact path="/password-recovery" component={PasswordRecovery} />
 						<Route exact path="/new-password/:token" component={NewPassword} />						
+						<Route exact path="/product/:id" component={Product} />						
 						<Route exact path="/send-email" component={SendEmail} />						
 						<Route exact path="/:token?" component={Home} />
 						<Route path="*" component={NotFound} />

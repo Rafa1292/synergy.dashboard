@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <>
-            <div className="col-12 m-0 bg-light shadow">
+            <div className="col-12 m-0 bg-light shadow footer">
                 <footer className="d-flex flex-wrap justify-content-around align-items-center p-4 border-top" style={{height: '150px'}}>
                     <div className="col-md-4 d-flex align-items-center">
                         <span className="mb-3 mb-md-0 text-muted">© 2011 Synergy Real Estate</span>

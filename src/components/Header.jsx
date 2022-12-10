@@ -27,8 +27,8 @@ const Header = () => {
 						<img className='' src={logo} />
 					</Link>
 				</div>
-				<div className="header-menu p-4" style={{cursor: 'pointer'}}>
-					<img height={openMenuClass === "" ? 40 : 30} src={openMenuClass === "" ? menu : close} onClick={() => OpenMenu()} />
+				<div className="header-menu p-4" style={{cursor: 'pointer'}} onClick={() => OpenMenu()}>
+					<img height={openMenuClass === "" ? 40 : 30} src={openMenuClass === "" ? menu : close}  />
 				</div>
 			</div>
 			<Navbar menuState={openMenuClass}/>

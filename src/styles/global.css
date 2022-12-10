@@ -8,7 +8,9 @@ body {
     box-sizing: border-box;
 }
 
-
+.layout{
+    padding-bottom: 150px;
+}
 
 .layout::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -49,5 +51,9 @@ label {
 @media(max-width: 800px){
     body {
         width: 100vw;
+    }
+
+    .layout{
+        padding-top: 100px;
     }
 }
