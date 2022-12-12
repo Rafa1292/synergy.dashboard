@@ -1,12 +1,12 @@
 import React, { useEffect, useContext, useState, useRef } from 'react';
 import Header from '@components/Header';
 import Loader from '@components/Loader';
-import Footer from '@components/Footer';
+import Navbar from '@components/Navbar';
 import AppContext from '../context/AppContext';
 
 const Layout = ({ children }) => {
 	const [loader, setLoader] = useState(true);
-    const { setProducts } = useContext(AppContext);
+	const { setProducts } = useContext(AppContext);
 
 	const GetItems = async () => {
 		const tempItems = [
@@ -100,16 +100,23 @@ const Layout = ({ children }) => {
 	}, []);
 
 	return (
-		<div className="layout center" style={{ position: 'relative', minHeight: '100vh' }}>
-			<Header />
-			{
-				loader &&
-				<Loader />
-				||
-				children
-			}
-			<Footer/>
+		<>
+		<Header/>
+		<div className="container-fluid">
+			<div className="row">
+				<Navbar/>
+				<main className="col-md-9 ms-sm-auto col-lg-11 d-flex  px-2 justify-content-center">
+
+				{
+					loader &&
+					<Loader />
+					||
+					children
+				}
+			</main>
+			</div>
 		</div>
+		</>
 	);
 }
 

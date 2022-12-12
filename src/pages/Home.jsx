@@ -4,7 +4,6 @@ import { useHistory } from "react-router-dom"
 import AppContext from '../context/AppContext';
 import '@styles/Home.scss';
 import Filter from '@containers/Filter'
-import ProductItems from '@containers/ProductItems'
 
 const Home = () => {
 	const { token } = useParams();
@@ -27,13 +26,9 @@ const Home = () => {
 	}, [])
 	return (
 		<>
-			<div className='home col-12 flex-wrap'>
-				<div className='col-12 d-flex home-bg'>
-					<div className="home-backdrop"></div>
-				</div>
+			<div className='col-12 flex-wrap'>
+
 			</div>
-			<Filter />
-			<ProductItems />
 		</>
 	);
 }

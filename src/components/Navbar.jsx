@@ -7,35 +7,42 @@ import wapp from '@icons/wappw.png'
 const Navbar = ({ menuState }) => {
 
 
-    return (
-        <>
-            <main className={`navbar ${menuState}`}>
-                <ul className="list-group navbar-options list-group-flush col-12">
-                    <li className="list-group-item">Casas</li>
-                    <li className="list-group-item">Lotes</li>
-                    <li className="list-group-item">Comercial</li>
-                    <li className="list-group-item">Alquiler</li>
-                </ul>
-                <ul className="list-group list-group-horizontal col-12 list-group-flush justify-content-center" style={{opacity: '0.8'}}>
-                        <li className="list-group-item">
-                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
-                                <img  height={40} src={face} />
-                            </a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
-                                <img  height={40} src={insta} />
-                            </a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href='https://www.facebook.com/quesadabienesraices' target={'blank'}>
-                                <img  height={40} src={wapp} />
-                            </a>
-                        </li>
-                    </ul>
-            </main>
-        </>
-    );
+  return (
+    <>
+      <nav
+        id="sidebarMenu"
+        className="col-md-3 col-lg-1 d-md-block bg-light sidebar collapse"
+      >
+        <div className="position-sticky pt-3 sidebar-sticky">
+          <ul className="nav flex-column">
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#">
+                <span data-feather="home" className="align-text-bottom" />
+                Configuracion 
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#">
+                <span data-feather="home" className="align-text-bottom" />
+                Productos
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <span data-feather="file" className="align-text-bottom" />
+                Etiquetas
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="bg-dark d-flex d-md-none justify-content-center align-items-center text-white d-flex col-12"
+          style={{ position: 'absolute', bottom: '0', height: '40px', fontWeight: 'bold' }}>
+          Sign-out
+        </div>
+      </nav>
+
+    </>
+  );
 }
 
 export default Navbar;
